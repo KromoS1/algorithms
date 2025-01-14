@@ -53,10 +53,6 @@ describe('SearchInWidthService', () => {
     service = moduleRef.get<SearchInWidthService>(SearchInWidthService);
   });
 
-  it('service should be find', () => {
-    expect(service).toBeDefined();
-  });
-
   it('should be find seller person - Bob', () => {
     const person: PersonType = service.method(persons);
     expect(person.name).toBe('Bob');

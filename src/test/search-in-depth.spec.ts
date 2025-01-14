@@ -38,10 +38,6 @@ describe('SearchInDepthService', () => {
     service = moduleRef.get<SearchInDepthService>(SearchInDepthService);
   });
 
-  it('service should be find', () => {
-    expect(service).toBeDefined();
-  });
-
   it('should be run algorithm and return array name files', () => {
     const array = service.method([dir4]);
 
@@ -52,9 +48,6 @@ describe('SearchInDepthService', () => {
       'image5.png',
       'image4.png',
     ];
-
-    console.log('resExpect', resExpect);
-    console.log('array', array);
 
     resExpect.forEach((name, i) => {
       expect(name).toBe(array[i]);
