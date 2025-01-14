@@ -42,7 +42,7 @@ export const persons: PersonType[] = [
   person5,
 ];
 
-describe('FastSortService', () => {
+describe('SearchInWidthService', () => {
   let service: SearchInWidthService;
 
   beforeEach(async () => {
